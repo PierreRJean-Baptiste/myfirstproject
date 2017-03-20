@@ -1,0 +1,74 @@
+* {
+	font-family: Helvetica; 
+	font-size: 15px;
+	letter-spacing:2px;
+}
+
+h1 {
+	color:blue;
+	text-align:center;
+}
+
+header {
+	height: 10vh;
+}
+
+/**/
+nav {
+	position:absolute;
+	right :10px;
+	top   :10px;
+}
+nav ul {
+	list-style: none;
+	padding: 0px;
+}
+nav>ul>li {
+	display: inline-block;
+	vertical-align: top;
+	width: 100px;
+}
+
+nav a {
+	padding: 5px 20px;
+	text-decoration: none;
+	border: 2px solid #505;
+	display: block;
+	border-radius: 20px;
+	text-align: center;
+}
+nav ul li ul {
+	display: none;
+}
+
+nav ul li:hover ul {
+	display: block;
+	width: 100px;
+}
+/* Portfolio hover */
+nav ul li:hover ul li a {
+	display: block;
+	background: #fff;
+	color: #000;
+	border-radius: 20px;
+	border: 1px solid #c0c;
+	padding: 10px;
+	margin: 10px 0px;
+	font-size: 14px;
+}
+
+/* main hover */
+nav li:hover a,
+nav ul li:hover ul li:hover a {
+	background: #08a;
+	border-color: #fff;
+	color: #fff;
+}
+#mypicture{
+	background-image: url("../img/mainpic.jpg");
+	height:50vh;
+	
+	background-position: center center;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
